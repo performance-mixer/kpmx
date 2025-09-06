@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Performance Mixer
+Exec=kpmx
+Icon=kde
+Type=Application
+Terminal=false
+Categories=AudioVideo;Audio;Mixer;Qt;KDE;
