@@ -197,7 +197,7 @@ private:
   double _equalizer_mid_gain = 0.0;
   double _equalizer_low_gain = 0.0;
   QString _name;
-  double _volume = 1.0;
+  double _volume = 0.0;
   double _pan = 0.0;
 
   Q_SIGNAL void selectedLoopChanged();

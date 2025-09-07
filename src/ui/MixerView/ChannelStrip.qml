@@ -536,8 +536,8 @@ Item {
                     QQC2.Slider {
                         id: volumeSlider
                         orientation: Qt.Vertical
-                        from: 0.0
-                        to: 10.0
+                        from: -24.0
+                        to: 24.0
                         live: true
                         value: root.model.volume
                         onValueChanged: {
@@ -549,6 +549,7 @@ Item {
                         Layout.alignment: Qt.AlignHCenter
                     }
 
+                    /*
                     QQC2.Slider {
                         id: panSlider
                         orientation: Qt.Horizontal
@@ -563,6 +564,7 @@ Item {
                         }
                         Layout.fillWidth: true
                     }
+                     */
                 }
             }
         }

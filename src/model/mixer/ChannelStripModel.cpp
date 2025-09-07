@@ -380,6 +380,10 @@ double ChannelStripModel::volume() const {
 void ChannelStripModel::setVolume(const double volume) {
   if (_volume != volume) {
     _volume = volume;
+    control_queue_message message{
+      .parameter_name = "Equalizer:master", .value = volume,
+    };
+    _queue->push(message);
     Q_EMIT volumeChanged();
   }
 }
